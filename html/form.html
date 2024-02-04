@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="burger-menu">
+        <div class="burger-icon"></div>
+
+        <div class="burger-links">
+          <a href="home.html">Accueil</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="logo">Jad's Portfolio!!!</div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <div class="swiper-iim">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-illu">
+          <p class="subtitle">Créations 2D</p>
+          <p class="title">Illustrations</p>
+        </div>
+        <div class="swiper-slide slide-pixel">
+          <p class="subtitle">Créations 2D</p>
+          <p class="title">Pixel Art</p>
+        </div>
+        <div class="swiper-slide slide-perso">
+          <p class="subtitle">Créations 3D</p>
+          <p class="title">Personnages</p>
+        </div>
+        <div class="swiper-slide slide-env">
+          <p class="subtitle">Créations 3D</p>
+          <p class="title">Environnements</p>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <button id="theme">Dark mode</button>
+
+    <h1>
+      Besoin de me contacter ? Des questions ? Inscrivez-vous et écrivez un
+      message !
+    </h1>
+
+    <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      Votre formulaire a été envoyé ! A très vite !
+    </div>
+    <form id="formulaire" action="" method="POST" enctype="multipart/form-data">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" />
+      </div>
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <label for="password1">Vérification du mot de passe</label>
+        <input type="password" name="password2" id="password2" />
+      </div>
+      <div>
+        <h2>Lesquels de ces domaines vous motivent à me contacter ?</h2>
+        <label for="check-jeux-video">Jeux Vidéo</label>
+        <input
+          type="checkbox"
+          name="check-jeux-video"
+          id="check-jeux-video"
+          value="jeux-video"
+        />
+
+        <label for="check-film-animation">Film d'animation</label>
+        <input
+          type="checkbox"
+          name="check-film-animation"
+          id="check-film-animation"
+          value="film-animation"
+        />
+
+        <label for="check-sculpt-3d">Sculpt 3D</label>
+        <input
+          type="checkbox"
+          name="check-sculpt-3d"
+          id="check-sculpt-3d"
+          value="sculpt-3d"
+        />
+
+        <label for="check-illustration">Illustration</label>
+        <input
+          type="checkbox"
+          name="check-illustration"
+          id="check-illustration"
+          value="illustration"
+        />
+      </div>
+
+      <div>
+        <label for="axe">Je vous contacte car...</label>
+        <select name="axe" id="axe">
+          <option value="">Choisir une option</option>
+          <option value="axe0"></option>
+          <option value="axe1">...je veux poser une question</option>
+          <option value="axe2">
+            ...je souhaite avoir une prestation personnalisée
+          </option>
+          <option value="axe3">
+            ...j'ai des propositions d'opportunités professionnelles
+          </option>
+          <option value="axe4">Autre</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          rows="6"
+          cols="55"
+          placeholder="Écrivez votre message ici..."
+        ></textarea>
+      </div>
+      <button type="submit">S'inscrire</button>
+    </form>
+    <script src="../js/script.js"></script>
+    <footer>
+      <p>&copy; 2024 Jad's Portfolio. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

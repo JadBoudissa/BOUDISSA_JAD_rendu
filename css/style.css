@@ -1,0 +1,384 @@
+body.dark {
+  background-color: #212121;
+  color: white;
+}
+
+body.dark input {
+  background-color: #333;
+  color: white;
+}
+
+body.dark button {
+  background-color: #333;
+  color: white;
+}
+
+body.dark select {
+  background-color: #333;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+}
+
+body {
+  width: 80%;
+  margin: 80px auto;
+}
+
+form {
+  border: 3px solid rgb(181, 186, 255);
+}
+
+form > div {
+  margin: 30px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  height: 20px;
+  width: 40%;
+  background-color: white;
+}
+
+button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.message-error {
+  border: 3px solid rgba(212, 42, 0, 1);
+  color: rgb(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-success {
+  border: 3px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.success {
+  border: 2px solid rgb(81, 150, 2);
+  background-color: rgba(166, 255, 63, 0.4);
+}
+.error {
+  border: 2px solid rgb(248, 50, 0);
+  background-color: rgba(255, 74, 24, 0.4);
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.message-success.visible {
+  display: block;
+}
+
+body.dark .swiper-slide {
+  background-color: #333;
+  color: white;
+}
+
+.swiper-slide {
+  min-height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-iim {
+  overflow: hidden;
+  margin-bottom: 10vh;
+  width: 100%;
+  position: relative;
+}
+
+.swiper-pagination,
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  bottom: 20px;
+  width: auto;
+}
+
+.slide-illu {
+  background-image: url("../slides/slide_illu.png");
+  background-size: cover;
+  background-position: center 15%;
+}
+
+.slide-pixel {
+  background-image: url("../slides/slide_pixel.png");
+  background-size: cover;
+  background-position: center 50%;
+}
+
+.slide-perso {
+  background-image: url("../slides/slide_perso.png");
+  background-size: cover;
+  background-position: center 50%;
+}
+
+.slide-env {
+  background-image: url("../slides/slide_env.png");
+  background-size: cover;
+  background-position: center 50%;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 24px;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  z-index: 5;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 72px;
+  color: white;
+  text-transform: lowercase;
+  z-index: 5;
+}
+
+body .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+}
+
+body .swiper-pagination-bullet-active {
+  background: rgb(255, 255, 255);
+}
+
+body .swiper-button-next,
+body.swiper-button-prev {
+  color: rgb(255, 255, 255);
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 0, 97, 0.385);
+  z-index: 1;
+  transition: background-color 0.5s ease;
+}
+
+.swiper-slide:hover::before {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+  font-size: 23px;
+  color: #8972ff;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #8972ff;
+  padding-bottom: 30px;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.burger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #7371ff;
+  margin: 6px 0;
+  transition: transform 0.3s ease;
+}
+
+.burger-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+  margin-left: -5.5vh;
+}
+
+.burger-links a {
+  text-decoration: none;
+  color: #8972ff;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.burger-links a:hover {
+  background-color: #e3d9f5;
+}
+
+.burger-menu.active .burger-icon {
+  transform: rotate(20deg);
+}
+
+.burger-menu.active .burger-links {
+  display: flex;
+}
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 3px;
+  background-color: #8972ff;
+  position: relative;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #8972ff;
+  margin: 6px 0;
+}
+
+.burger-icon::before,
+.burger-icon::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #8972ff;
+  position: absolute;
+}
+
+.burger-icon::before {
+  top: -8px;
+}
+
+.burger-icon::after {
+  top: 8px;
+}
+
+.burger-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: -150px;
+  background-color: white;
+  width: 150px;
+  text-align: center;
+  transition: left 0.3s ease;
+}
+
+.burger-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+.burger-menu.active .burger-links {
+  left: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7371ff;
+  margin-left: 72vh;
+  margin-top: -12vh;
+}
+
+.filters {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filters ul {
+  display: flex;
+  gap: 30px;
+}
+
+.filters li {
+  color: white;
+  background-color: #8972ff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.filters li.active {
+  background-color: #cb72ff;
+}
+
+.portfolio-elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-elements .portfolio-card {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.portfolio-elements .card img {
+  width: 25vh;
+  height: auto;
+}
+
+.portfolio-elements .card .card-title {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 1vh;
+}
+
+footer {
+  background-color: #8972ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: -15vh;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 14px;
+}

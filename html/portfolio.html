@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <div class="header">
+      <div class="burger-menu">
+        <div class="burger-icon"></div>
+
+        <div class="burger-links">
+          <a href="home.html">Accueil</a>
+          <a href="#">Portfolio</a>
+          <a href="form.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="logo">Jad's Portfolio!!!</div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <div class="swiper-iim">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-illu">
+          <p class="subtitle">Créations 2D</p>
+          <p class="title">Illustrations</p>
+        </div>
+        <div class="swiper-slide slide-pixel">
+          <p class="subtitle">Créations 2D</p>
+          <p class="title">Pixel Art</p>
+        </div>
+        <div class="swiper-slide slide-perso">
+          <p class="subtitle">Créations 3D</p>
+          <p class="title">Personnages</p>
+        </div>
+        <div class="swiper-slide slide-env">
+          <p class="subtitle">Créations 3D</p>
+          <p class="title">Environnements</p>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <button id="theme">Dark mode</button>
+
+    <div class="filters">
+      <ul>
+        <li data-filter="all" class="active">Tous les projets</li>
+        <li data-filter="3dperso">Personnages 3D</li>
+        <li data-filter="illu">Illustrations</li>
+        <li data-filter="3denv">Environnements 3D</li>
+        <li data-filter="pixel">Pixel Art</li>
+      </ul>
+    </div>
+
+    <div class="portfolio-elements">
+      <div class="card filtr-items" data-category="illu">
+        <div class="card-header">
+          <p class="card-title">Illustrations</p>
+        </div>
+        <a href="../tabs/pin.png">
+          <img src="../tabs/pin.png" alt="illustration" />
+        </a>
+      </div>
+
+      <div class="card filtr-items" data-category="pixel">
+        <div class="card-header">
+          <p class="card-title">Pixel Art</p>
+        </div>
+        <a href="../tabs/BOUDISSA_jad_saut.gif">
+          <img src="../tabs/BOUDISSA_jad_saut.gif" alt="pixel" />
+        </a>
+      </div>
+
+      <div class="card filtr-items" data-category="3dperso">
+        <div class="card-header">
+          <p class="card-title">Personnages 3D</p>
+        </div>
+        <a href="../tabs/flowergirl.png">
+          <img src="../tabs/flowergirl.png" alt="3dperso" />
+        </a>
+      </div>
+
+      <div class="card filtr-items" data-category="3denv">
+        <div class="card-header">
+          <p class="card-title">Environnements 3D</p>
+        </div>
+        <a href="../tabs/decor rendu.png">
+          <img src="../tabs/decor rendu.png" alt="3denv" />
+        </a>
+      </div>
+    </div>
+
+    <script src="../js/portfolio.js"></script>
+
+    <footer>
+      <p>&copy; 2024 Jad's Portfolio. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
